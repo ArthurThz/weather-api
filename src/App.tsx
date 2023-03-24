@@ -1,5 +1,7 @@
+import Wheter from "./pages/Wheter";
+
 function App() {
-  return <div className="App"></div>;
+  return <Wheter />;
 }
 
 export default App;
