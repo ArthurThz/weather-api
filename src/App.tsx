@@ -1,4 +1,4 @@
-import Wheter from "./pages/Wheter";
+import Wheter from "./pages/Weather";
 
 function App() {
   return <Wheter />;

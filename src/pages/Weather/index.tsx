@@ -1,16 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { Container, Row, Wrapper } from "./styles";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
 import Infos from "../../components/Infos";
-import { IProps } from "./types";
-import { apiPathUrl } from "../../services/api";
 const Wheter = () => {
   const [cityName, setCityName] = useState("");
   const [Search, setSearch] = useState(cityName);
 
-  const handleCityName = (event: any) => {
+  const handleCityName = (event: { target: HTMLInputElement }) => {
     setCityName(event.target.value);
   };
 
@@ -20,7 +18,7 @@ const Wheter = () => {
 
   return (
     <Container>
-      <h1>Wheter Today</h1>
+      <h1>Weather Today</h1>
       <Wrapper>
         <Row>
           <Input

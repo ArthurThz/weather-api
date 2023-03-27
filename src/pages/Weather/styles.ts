@@ -22,7 +22,9 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
     width:40%;
+    min-width:320px;
     padding:2em 1em;
+    
 
     border-radius:20px;
 
@@ -32,13 +34,20 @@ export const Wrapper = styled.div`
     flex-direction:column;
 
     background-color:#91D1F6;
+
+   
 `
 
 export const Row = styled.div`
         width:100%;
         display:flex;
         align-items:center;
-        justify-content:center;
+        justify-content:center;   
+
+        @media (max-width:850px){
+        flex-direction:column;
+        gap:15px;
+    }
  `
  export const InfosContainer = styled.div`
     width:100%;

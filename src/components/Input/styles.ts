@@ -8,6 +8,10 @@ export const InputContainer = styled.div`
     align-items:center;
     
     margin-right:20px;
+    
+    @media(max-width:850px){
+        margin:0;
+    }
 
 `
 

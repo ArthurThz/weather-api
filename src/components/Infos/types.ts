@@ -3,16 +3,17 @@ export interface IInfos {
 }
 
 export interface IData {
-  name?: string,
-  main?: { temp: number };
+  name?: string;
+  main?: { temp: number; humidity: number };
   weather?: [
     {
-      description?: string,
-      icon?: string,
+      description?: string;
+      icon?: string;
     }
-  ],
+  ];
   wind: {
-    speed:number,
-  }
-  
+    speed: number;
+  };
 }
+
+
